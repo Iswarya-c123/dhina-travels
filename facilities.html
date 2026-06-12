@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhina Tours & Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: cornsilk;
+    }
+    .navbar{
+        background-color: black;
+    }
+    .navbar-brand{
+        color: aqua;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    .nav-link{
+        color: white !important;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .nav-link:hover{
+        color: red !important;
+    }
+    #facilities{
+        background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url("background.jpeg");
+        background-size:cover;
+        background-position:center;
+        padding:80px 20px;
+        text-align: center;
+    }
+    .overlay{
+        text-align:center;
+    }
+    #facilities h1{
+        text-align:center;
+        font-size:45px;
+        color:#07e6cf;
+        margin-bottom:30px;
+        position:relative;
+        font-weight: bolder;
+    }
+    #facilities h1::after{
+        content:'';
+        width:80px;
+        height:4px;
+        background:#04f0d8;
+        display:block;
+        margin:10px auto;
+        border-radius:10px;
+    }
+    .subtitle{
+        color:white;
+        font-size:22px;
+        margin-bottom:40px;
+    }
+    .facility-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+    }
+    .facility-box{
+        width:280px;
+        background:rgba(255,255,255,0.12);
+        backdrop-filter:blur(10px);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:20px;
+        padding:25px;
+        color:white;
+        transition:.4s;
+    }
+    .facility-box:hover{
+        transform:translateY(-10px);
+        box-shadow:0 10px 25px rgba(255,255,255,0.2);
+    }
+    .icon{
+        font-size:50px;
+        margin-bottom:15px;
+    }
+    .facility-box h3{
+        margin-bottom:10px;
+        color:#ffb300;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand">Dhina Travels</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <section id="facilities">
+        <div class="overlay">
+            <h1>Our Premium Facilities</h1>
+            <p class="subtitle">Travel With Comfort, Safety & Luxury</p>
+            <div class="facility-container">
+                <div class="facility-box">
+                    <div class="icon">🚗</div>
+                    <h3>Car Rental</h3>
+                    <p>Comfortable cars for local and outstation trips.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🚙</div>
+                    <h3>SUV Service</h3>
+                    <p>Perfect choice for family travel and long journeys.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🚐</div>
+                    <h3>Tempo Traveller</h3>
+                    <p>Ideal for group tours and pilgrim trips.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🚌</div>
+                    <h3>Mini Bus</h3>
+                    <p>Available for school, college and family tours.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🚍</div>
+                    <h3>Tourist Bus</h3>
+                    <p>Luxury buses with comfortable seating.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">✈️</div>
+                    <h3>Airport Pickup</h3>
+                    <p>Reliable pickup and drop service.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🛕</div>
+                    <h3>Temple Tours</h3>
+                    <p>Special pilgrimage packages across Tamil Nadu.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">❄️</div><h3>AC Vehicles</h3>
+                    <p>Fully air-conditioned and maintained vehicles.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">📍</div>
+                    <h3>GPS Tracking</h3>
+                    <p>Track your journey with advanced GPS support.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🛡️</div>
+                    <h3>Safe Travel</h3>
+                    <p>Experienced drivers and secure travel services.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Packages</h3>
+                    <p>Affordable holiday packages for families.</p>
+                </div>
+                <div class="facility-box">
+                    <div class="icon">🇮🇳</div>
+                    <h3>All India Tours</h3>
+                    <p>Travel packages available all over India.</p>
+                </div>
+            </div>
+        </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
